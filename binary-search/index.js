@@ -3,7 +3,6 @@ import BinarySearch from './binarySearch';
 // Create sorted array
 const mockData = (quantity) => {
   let result = [];
-  // let value = Math.round((Math.random() * 10) + 1);  // random value from 1 to 10
   let value = 10;
   while(quantity > 0) {
     result.push(value);
