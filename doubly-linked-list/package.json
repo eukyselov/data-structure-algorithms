@@ -1,0 +1,12 @@
+{
+  "name": "doubly-linked-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "doublyLinkedList.js",
+  "scripts": {
+    "start-linked": "nodemon doublyLinkedList.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yevgeny Kyselov",
+  "license": "ISC"
+}
