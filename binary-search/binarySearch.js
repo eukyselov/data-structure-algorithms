@@ -17,8 +17,6 @@ export default class BinarySearch {
     let max = arr.length - 1;
 
     let mid;
-    let i = 0;
-
     while(min <= max) {
       mid = Math.round(min + (max - min) / 2);
 
