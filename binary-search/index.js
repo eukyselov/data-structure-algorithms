@@ -41,7 +41,7 @@ const run = (quantity = 1, algorithm, arr, value) => {
 const initArray = mockData(10000000);
 const find = 999999;
 
-// Be careful with JIT compilation if you're going measure any metrics
+// Be careful with JIT compilation if you're going to measure any metrics
 run(10, dataSearchAlgorithms.linear, initArray, find);
 run(10, dataSearchAlgorithms.bloop, initArray, find);
 run(10, dataSearchAlgorithms.brecursion, initArray, find);
