@@ -13,7 +13,7 @@ const mockData = (quantity) => {
 }
 
 // const initArray = mockData(5);
-const initArray = [ 5, 3, 8, 7, 10 ];
+const initArray = [ 5, 13, 8, 7, 10 ];
 
 // console.log(initArray);
 
@@ -22,11 +22,25 @@ for(let i = 0; i < initArray.length; i++) {
   bTreeSearch.insert(initArray[i]);
 }
 
-const test = bTreeSearch.getFullTree();
-const rotate = bTreeSearch.rotateLeft(111);
+// const test = bTreeSearch.getFullTree();
+// bTreeSearch.rotateLeft(5);
+// const rotateLeft = bTreeSearch.getFullTree();
+// console.log(util.inspect(rotateLeft, {showHidden: false, depth: null}));
 
-console.log(util.inspect(test, {showHidden: false, depth: null}));
-console.log(util.inspect(rotate, {showHidden: false, depth: null}));
+// bTreeSearch.rotateRight(13);
+// const rotateRight = bTreeSearch.getFullTree();
+// console.log(util.inspect(rotateRight, {showHidden: false, depth: null}));
+
+
+const minNode = bTreeSearch.findMinNode();
+console.log('Min node:', minNode);
+const maxNode = bTreeSearch.findMaxNode();
+console.log('Max node:', maxNode);
+
+// console.log(maxNode);
+// console.log(util.inspect(test, {showHidden: false, depth: null}));
+// console.log(util.inspect(rotateLeft, {showHidden: false, depth: null}));
+// console.log(util.inspect(rotateRight, {showHidden: false, depth: null}));
 
 
 

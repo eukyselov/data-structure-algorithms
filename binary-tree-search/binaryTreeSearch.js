@@ -46,15 +46,34 @@ export default class BinarySearchTree {
     node.right = newNode.left;
     newNode.left = node;
 
-    return newNode;
+    this.root = newNode;
+  }
+
+  rotateRight(data) {
+    const node = this.find(data);
+    if (node === null) return -1;
+
+    const newNode = node.left;
+    node.left = newNode.right;
+    newNode.right = node;
+
+    this.root = newNode;
   }
 
   remove(data) {
 
   }
 
-  findMinNode() {
+  findMinNode(node, data) {
+    if(!node) node = this.root;
+    if(node.left !== null) return this.findMinNode(node.left, data);
+    else return node.data;
+  }
 
+  findMaxNode(node, data) {
+    if(!node) node = this.root;
+    if(node.right !== null) return this.findMaxNode(node.right, data);
+    else return node.data;
   }
 
   getRootNode() {
